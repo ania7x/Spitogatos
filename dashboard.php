@@ -248,7 +248,6 @@ button {
                             $('.house-postings').append(newRowHTML);
 
                         refreshhousePostings();
-                        $('.no-house-postings').hide(); // Hide "No house postings found" message
                     }
                 }
             },
