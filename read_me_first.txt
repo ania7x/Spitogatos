@@ -1,4 +1,4 @@
-1. Download XAMPP includes Apache, MySQL, and PHP  from https://www.apachefriends.org/ ( I downloaded the one for windows)
+1. Download and install XAMPP includes Apache, MySQL, and PHP  from https://www.apachefriends.org/ ( I downloaded the one for windows)
 
 
 2.Create the spitogatos Folder: Inside the XAMPP htdocs directory, create a folder named spitogatos. 
