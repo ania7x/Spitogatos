@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.scss">
+
+
+    <!-- JavaScript code for client-side validation -->
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var usernameError = document.getElementById("usernameError");
+            var passwordError = document.getElementById("passwordError");
+            var isValid = true;
+
+            // Validate username
+            if (username.trim() === "") {
+                usernameError.textContent = "Please enter your username.";
+                isValid = false;
+            } else {
+                usernameError.textContent = "";
+            }
+
+            // Validate password
+            if (password.trim() === "") {
+                passwordError.textContent = "Please enter your password.";
+                isValid = false;
+            } else {
+                passwordError.textContent = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300" height="300" viewBox="0 0 640 480" xml:space="preserve">
+            <g transform="matrix(3.31 0 0 3.31 320.4 240.4)">
+                <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(61,71,133); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"/>
+            </g>
+            <g transform="matrix(0.98 0 0 0.98 268.7 213.7)">
+                <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"/>
+            </g>
+            <g transform="matrix(1.01 0 0 1.01 362.9 210.9)">
+                <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"/>
+            </g>
+            <g transform="matrix(0.92 0 0 0.92 318.5 286.5)">
+                <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"/>
+            </g>
+            <g transform="matrix(0.16 -0.12 0.49 0.66 290.57 243.57)">
+                <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-50,-50 -50,50 50,50 50,-50"/>
+            </g>
+            <g transform="matrix(0.16 0.1 -0.44 0.69 342.03 248.34)">
+                <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-50,-50 -50,50 50,50 50,-50"/>
+            </g>
+        </svg>
+        <form id="loginForm" action="login_process.php" method="POST" onsubmit="return validateForm()">
+            <div class="username">
+                <label for="username">Username:</label>
+                <input type="text" placeholder='Username' id="username" name="username" required>
+                <ion-icon class="show-hide2" name="eye-outline"></ion-icon>
+                <div id="usernameError" class="error-message"></div>
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" placeholder='••••••••••••••'  id="password" name="password" required>
+                <ion-icon class="show-hide1" name="eye-outline"></ion-icon>
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            
+      
+            <button class="login" type='submit'>Login</button>
+    
+        </form>
+        
+
+
+      
+    </div>
+    
+    
+</body>
+
+</html>
+
+	
