@@ -1,7 +1,7 @@
 1. Download and install XAMPP includes Apache, MySQL, and PHP  from https://www.apachefriends.org/ ( I downloaded the one for windows)
 
 
-2.Add the spitogatos Folder: Inside the XAMPP htdocs directory, add the folder spitogatos. 
+2.Add the spitogatos Folder: Inside the XAMPP htdocs directory, add the folder you downloaded from here renamed as spitogatos. 
 
 
 3.Open xampp , start apache php and mysql.
