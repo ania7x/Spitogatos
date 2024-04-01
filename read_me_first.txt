@@ -17,8 +17,11 @@
 
 
 
-6.   On your your web browser write localhost\spitogatos\run_at_first\index.php to add the first users.(Also check or change the file add_users for users and their passwords)
+6.   On your your web browser write localhost\spitogatos\run_at_first\index.php to add the first users.
+
+
+7.   Check or change the file add_users for users and their passwords.
 
        
 
-7.  On your your web browser write localhost/spitogatos/login.html and try it out.
+8.  On your your web browser write localhost/spitogatos/login.html and try it out.
