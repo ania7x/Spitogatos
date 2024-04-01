@@ -108,7 +108,7 @@ button {
     // Check if the user is not authenticated
     if (!isset($_SESSION['user_id'])) {
         // Redirect the user to the login page
-        header("Location: login_process.php");
+        header("Location: login.html");
         exit(); // Stop further execution of the script
     }
 
