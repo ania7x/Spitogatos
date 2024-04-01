@@ -170,7 +170,7 @@ button {
         echo "<option value='Ενοικίαση'>Ενοικίαση</option>";
         echo "<option value='Πώληση'>Πώληση</option>";
         echo "</select><br>";
-        echo "<label>Εμβαδόν:</label> <input type='number' name='size' required><br>";
+        echo "<label>Τετραγωνικά:</label> <input type='number' name='size' required><br>";
         echo "<button type='submit' name='add_house'>Add house Posting</button>";
         echo "</form>";
         echo "</nav>";
